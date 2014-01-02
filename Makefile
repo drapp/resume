@@ -2,10 +2,11 @@ all: pdf
 
 view:
 	make all
-	xpdf resume.pdf
+	open resume.pdf
 	
 
 dvi: resume.tex
+	export PATH=/usr/texbin:$PATH
 	latex resume.tex
 
 pdf: dvi

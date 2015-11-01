@@ -35,45 +35,68 @@
 \quad\\
 {\bf {\large Objective}}\ \hrulefill
 \begin{list}{}{\setlength{\leftmargin}{.25in}}
-\item An exciting position in Distributed Systems and/or
-Mobile where I can help shape the future of computing.
+\item I like solving hard problems and building big scalable systems.
 \end{list}
 {\bf{\large Experience}}\ \hrulefill
 \begin{list}{}{\setlength{\leftmargin}{.25in}}
-    \item {\bf StackMob (2012-Present)}\\
+    \item {\bf Layer (2014-Present)}\\
+    {\em Senior Software Engineer (San Francisco, CA)}
+    \begin{suber}
+	\item Built a world-class messaging system for mobile and web from the ground up
+		\begin{suberb}
+			\item Worked full stack from Android devices, to Erlang and Scala services, to CoreOS devops
+		\end{suberb}
+    \item Implemented the Layer authentication protocol on the server in Erlang
+		\begin{suberb}
+			\item Built a rest endpoint in that handles CSR requests to generate client certificates
+            \item Implemented a JWT-based scheme for doing federated user auth
+		\end{suberb}
+    \item Laid out the foundations for using Erlang and Cassandra in the core messaging server
+    \item Built a push server to notify about messages over APNs and GCS
+        \begin{suberb}
+            \item Worked in Erlang to maintain persistent connections and route user messages
+        \end{suberb}
+    \item Built a badging system to add unread count to push for mobile devices.
+        \begin{suberb}
+            \item Worked in Scala to calculate and cache this value outside the hot path
+        \end{suberb}
+    \item Led the Layer Client REST API effort
+        \begin{suberb}
+            \item Built Scala server backed by nginx and rabbitmq that can serve partitioned users
+            \item Used postgres as a cache and materialized view to get data ready for REST access
+        \end{suberb}
+    \item Built a ``Rich Content'' system for mobile clients to attach large files to messages
+		\begin{suberb}
+            \item Added APIs to generate authorized upload and download urls for Google Cloud Storage
+            \item Implemented async resumable upload and download on Android
+		\end{suberb}
+    \item Foundational work on the Android SDK
+		\begin{suberb}
+			\item Adapted okhttp library for bidirectional SPDY
+            \item Implemented initial versions of transport, persistence, proguard, and config management
+		\end{suberb}
+    \item Built out a jenkins/nexus infrastructure for build and dependency management
+    \end{suber}
+    \item {\bf StackMob (2012-2014)}\\
     {\em Software Engineer (San Francisco, CA)}
     \begin{suber}
-	\item Part of a team of eight building a massively scalable Mobile Backend as a Service
+	\item Part of a team of eight that built a massively scalable Mobile Backend as a Service
 		\begin{suberb}
 			\item Provided datastore APIs, push notifications, and custom code
 			solutions for mobile apps
 		\end{suberb}
-	\item Spearheaded a service-oriented architecture push
-		\begin{suberb}
-    	\item Evalutated http service options for performance, functionality, and maturity
-    	\item Created a framework and template to be used by all services to ease migration
-    	\item Educated the team and successfully drove adoption across all services
-		\end{suberb}
 	\item Rewrote the push server for scalability and performance
 		\begin{suberb}
-			\item Created a reusable auth server as the first step towards service-oriented architecture
 			\item Migrated tokens to Riak and implemented streaming over protobuffers
 			\item Added GCM push functionality when C2DM was deprecated
 		\end{suberb}
 	\item Evolved and owned the Java/Android SDKs
 		\begin{suberb}
-    	\item Optimized datastore API for user-friendliness and consistency
-    	\item Added an ORM layer to make the product accessible
+    	    \item Added an ORM layer to make the product accessible
 			\item Designed a server upsert API for the Android SDK that was later reused in iOS
 			\item Coordinated feature releases with other SDKs and server teams
 		\end{suberb}
-	\item Maintained and improved the iOS SDK for six months
-		\begin{suberb}
-    	\item Trained a new hire and successfully handed off the project
-    	\item Helped out with the CoreData SDK later on by implementing the core datastore APIs
-		\end{suberb}
 	\item Implemented rich OAuth2 permission options for the datastore and dynamic per-app CORS
-	\item Wrote a service to automatically add indexes based on incoming slow queries
 	\item Authored a series of programming blog posts for the StackMob blog to draw in developers
     \end{suber}
     \item {\bf Adobe AIR Team (2008-2011) and Flash Runtime Mobile Team (2011-2012)}\\
@@ -83,35 +106,20 @@ Mobile where I can help shape the future of computing.
 	\item Developed across  Android, iOS, Windows, and Mac on a huge, multi-language, legacy codebase
 	\item Module Owner of the AIR SDK and Installer responsible for code review
 	\item Led a team of five developers and QA on the ``Captive Runtime'' and ``Native App Installer'' features
-	\item Acted as owner for the AIR Developer Tool, a Java codebase for packaging AIR applications
 	\item Helped port the Android Flash Player to Honeycomb and Ice Cream Sandwich
     \end{suber}
-    \item {\bf Brown University Departments of Math and Computer Science (2005-2008)}\\
-    {\em Teaching assistant and course development work (Providence, RI)}
-    \begin{suber}
-	\item Head TA for CS031, Computer Systems, with Professor Pascal van Hentenryck (Fall 2007)
-        \begin{suberb}
-        	\item Hired and Managed a team of eleven TAs for a class of seventy
-					\item Coordinated project redesigns, assignment grading, office hours, and preparations for classes
-        \end{suberb}
-	\item TA for Algorithms (Spring 2008), Artificial Intelligence (Spring 2007), Linear Algebra (Fall 2005)
-    \end{suber}
 \end{list}
-%{\bf{\large Major Projects}}\ \hrulefill
-%\begin{list}{}{\setlength{\leftmargin}{.25in}}
-%\end{list}
 {\bf {\large Education}}\ \hrulefill
 \begin{list}{}{\setlength{\leftmargin}{.25in}}
 \item {\bf Brown University,
 	B.S. in Mathematics/Computer Science (2004-2008)}\\
 	{\em Coursework in Algorithms, Computer Graphics, and Machine Learning }
 \end{list}
-{\bf{\large Technical Skills}}\ \hrulefill
-\begin{list}{}{\setlength{\leftmargin}{.25in}}
-	\item {\bf Core Languages:} Scala, Java, C, \CPP, Objective C
-	\item {\bf Familiar Languages:} Actionscript, Perl, Python, HTML, \LaTeX{}
-	\item {\bf Technologies:} MySQL, MongoDB, Riak, RabbitMQ, Akka
-	\item {\bf Platforms:} Android, iOS, Mac, Windows, Linux
-\end{list}
+%{\bf{\large Technical Skills}}\ \hrulefill
+%\begin{list}{}{\setlength{\leftmargin}{.25in}}
+%	\item {\bf Core Languages:} Scala, Erlang, Java
+%	\item {\bf Familiar Languages:} C, \CPP, Objective C, Python, HTML, \LaTeX{}, 
+%	\item {\bf Technologies:} Cassandra, Postgresql, Riak, MongoDB, RabbitMQ, Akka
+%\end{list}
 \end{vita}
 \end{document}

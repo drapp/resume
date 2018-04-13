@@ -39,75 +39,66 @@
 \end{list}
 {\bf{\large Experience}}\ \hrulefill
 \begin{list}{}{\setlength{\leftmargin}{.25in}}
-    \item {\bf Layer (2014-Present)}\\
-    {\em Senior Software Engineer (San Francisco, CA)}
+    \item {\bf Layer (2014-2018)}\\
+    {\em Senior Software Engineer, Platform Lead (San Francisco, CA)}
     \begin{suber}
 	\item Built a world-class messaging system for mobile and web from the ground up
 		\begin{suberb}
-			\item Worked full stack from Android devices, to Erlang and Scala services, to CoreOS devops
+			\item Worked full stack from Android devices, to Erlang and Scala services, to CoreOS and Kubernetes.
 		\end{suberb}
+    \item Led a team of five to develop and maintain the Layer messaging backend service.
+		\begin{suberb}
+			\item Wrote product and engineering specs for new features.
+            \item Worked with newer engineers to get features implemented.
+            \item Coordinated with the client and infrastructure teams.
+		\end{suberb}
+    \item Designed and implemented the Layer REST APIs
+        \begin{suberb}
+            \item Built Scala server backed by nginx and rabbitmq that can serve partitioned users.
+            \item Used postgres as a cache and materialized view to get data ready for REST access.
+            \item Adapated a mobile sync protocol to reconcile data from Cassandra.
+        \end{suberb}
     \item Implemented the Layer authentication protocol on the server in Erlang
 		\begin{suberb}
 			\item Built a rest endpoint in that handles CSR requests to generate client certificates
             \item Implemented a JWT-based scheme for doing federated user auth
 		\end{suberb}
-    \item Laid out the foundations for using Erlang and Cassandra in the core messaging server
     \item Built a push server to notify about messages over APNs and GCS
         \begin{suberb}
             \item Worked in Erlang to maintain persistent connections and route user messages
         \end{suberb}
-    \item Built a badging system to add unread count to push for mobile devices.
-        \begin{suberb}
-            \item Worked in Scala to calculate and cache this value outside the hot path
-        \end{suberb}
-    \item Led the Layer Client REST API effort
-        \begin{suberb}
-            \item Built Scala server backed by nginx and rabbitmq that can serve partitioned users
-            \item Used postgres as a cache and materialized view to get data ready for REST access
-        \end{suberb}
+    \item Built a badging system to add unread count to push notifications for mobile devices.
     \item Built a ``Rich Content'' system for mobile clients to attach large files to messages
 		\begin{suberb}
             \item Added APIs to generate authorized upload and download urls for Google Cloud Storage
             \item Implemented async resumable upload and download on Android
 		\end{suberb}
-    \item Foundational work on the Android SDK
-		\begin{suberb}
-			\item Adapted okhttp library for bidirectional SPDY
-            \item Implemented initial versions of transport, persistence, proguard, and config management
-		\end{suberb}
-    \item Built out a jenkins/nexus infrastructure for build and dependency management
+    \item Laid out the foundations for using Erlang and Cassandra in the core messaging server
+    \item Foundational work on the Android SDK transport and persistence layers.
+    \item Built out a jenkins/nexus infrastructure for build and dependency management.
     \end{suber}
     \item {\bf StackMob (2012-2014)}\\
     {\em Software Engineer (San Francisco, CA)}
     \begin{suber}
-	\item Part of a team of eight that built a massively scalable Mobile Backend as a Service
-		\begin{suberb}
-			\item Provided datastore APIs, push notifications, and custom code
-			solutions for mobile apps
-		\end{suberb}
-	\item Rewrote the push server for scalability and performance
-		\begin{suberb}
-			\item Migrated tokens to Riak and implemented streaming over protobuffers
-			\item Added GCM push functionality when C2DM was deprecated
-		\end{suberb}
-	\item Evolved and owned the Java/Android SDKs
-		\begin{suberb}
-    	    \item Added an ORM layer to make the product accessible
-			\item Designed a server upsert API for the Android SDK that was later reused in iOS
-			\item Coordinated feature releases with other SDKs and server teams
-		\end{suberb}
+    \item Worked on a massively scalable Mobile Backend as a Service providing
+        datastore APIs, push notifications, and custom code solutions for
+        mobile apps
+	\item Rewrote the push server for scalability and performance using Riak, and added GCM support.
+	\item Evolved and owned the Java/Android SDKs, adding an ORM and upsert API
 	\item Implemented rich OAuth2 permission options for the datastore and dynamic per-app CORS
-	\item Authored a series of programming blog posts for the StackMob blog to draw in developers
     \end{suber}
     \item {\bf Adobe AIR Team (2008-2011) and Flash Runtime Mobile Team (2011-2012)}\\
     {\em Software Engineer (San Francisco, CA)}
     \begin{suber}
 	\item Implemented features and fixed over 1,000 bugs in areas including rendering, video, and OS interaction 
 	\item Developed across  Android, iOS, Windows, and Mac on a huge, multi-language, legacy codebase
-	\item Module Owner of the AIR SDK and Installer responsible for code review
-	\item Led a team of five developers and QA on the ``Captive Runtime'' and ``Native App Installer'' features
-	\item Helped port the Android Flash Player to Honeycomb and Ice Cream Sandwich
     \end{suber}
+\end{list}
+{\bf{\large Technical Skills}}\ \hrulefill
+\begin{list}{}{\setlength{\leftmargin}{.25in}}
+	\item {\bf Core Languages:} Scala, Erlang, Java
+	\item {\bf Familiar Languages:} C, \CPP, Python, \LaTeX{}, 
+	\item {\bf Technologies:} Cassandra, Postgresql, Kubernetes, RabbitMQ, Akka
 \end{list}
 {\bf {\large Education}}\ \hrulefill
 \begin{list}{}{\setlength{\leftmargin}{.25in}}
@@ -115,11 +106,5 @@
 	B.S. in Mathematics/Computer Science (2004-2008)}\\
 	{\em Coursework in Algorithms, Computer Graphics, and Machine Learning }
 \end{list}
-%{\bf{\large Technical Skills}}\ \hrulefill
-%\begin{list}{}{\setlength{\leftmargin}{.25in}}
-%	\item {\bf Core Languages:} Scala, Erlang, Java
-%	\item {\bf Familiar Languages:} C, \CPP, Objective C, Python, HTML, \LaTeX{}, 
-%	\item {\bf Technologies:} Cassandra, Postgresql, Riak, MongoDB, RabbitMQ, Akka
-%\end{list}
 \end{vita}
 \end{document}

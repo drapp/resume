@@ -6,10 +6,10 @@ view:
 	
 
 dvi: resume.tex
-	export PATH=/usr/texbin:${PATH}
-	/usr/texbin/latex resume.tex
+	export PATH=/Library/TeX/texbin:${PATH}
+	/Library/TeX/texbin/latex resume.tex
 
 pdf: dvi
-	export PATH=/usr/texbin:${PATH}
+	export PATH=/Library/TeX/texbin:${PATH}
 	make dvi
 	dvipdf resume.dvi
